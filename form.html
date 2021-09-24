@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Register for SPS</title>
+  </head>
+  <body>
+    <div class="registrationheader">
+      <div class="container">
+        <div
+          class="row d-flex justify-content-center col-lg-12"
+          style="width: 100%"
+        >
+          <div class="header">
+            <div class="container">
+              <div class="row">
+                <p class="h2">SPS<span>.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="regform" style="width: 100%; background-color: #f6f6f6">
+      <div class="container" style="padding: 10px">
+        <div class="row justify-content-center">
+          <div
+            class="redcard col-lg-10 justify-content-center"
+            style="
+              background-color: white;
+              margin-top: 20px;
+              padding: 40px;
+              padding-inline: 80px;
+              border-radius: 10px;
+              padding-bottom: 100px;
+              box-shadow: 0px 0px 15px 0px #8888;
+            "
+          >
+            <div class="row" style="padding: 10px">
+              <h1 class="h1size" style="color: #22d1b5; font-size: 30px">
+                REGISTRATION
+              </h1>
+            </div>
+            <div class="row input-underline col-lg-12">
+              <input
+                type="text"
+                placeholder="Full name"
+                class="inputtextc"
+                id="inpName"
+                name="Name"
+                required
+              />
+            </div>
+            <div class="row">
+              <div class="input-underline col-lg-5 rowhalf">
+                <input
+                  type="text"
+                  placeholder="Place"
+                  class="inputtextc"
+                  required
+                />
+              </div>
+              <div class="input-underline col-lg-5">
+                <form action="/action_page.php">
+                  <select class="inputtextc" id="gender" name="gender" required>
+                    <option
+                      disabled="disabled"
+                      class="inputtextc"
+                      selected="selected"
+                    >
+                      Gender
+                    </option>
+                    <option class="inputtextc" value="Male">Male</option>
+                    <option class="inputtextc" value="Female">Female</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+            <div class="row input-underline col-lg-12">
+              <input type="text" placeholder="Email" class="inputtextc" />
+            </div>
+            <div class="row">
+              <div class="input-underline col-lg-5 rowhalf">
+                <input
+                  type="text"
+                  placeholder="Contact No"
+                  class="inputtextc"
+                />
+              </div>
+              <div class="input-underline col-lg-4 rowhalf">
+                <form action="/action_page.php">
+                  <select class="inputtextc" id="gender" name="gender">
+                    <option
+                      disabled="disabled"
+                      class="inputtextc"
+                      selected="selected"
+                    >
+                      Employment Status
+                    </option>
+                    <option class="inputtextc" value="Employed">
+                      Employed
+                    </option>
+                    <option class="inputtextc" value="Fresher">Fresher</option>
+                    <option class="inputtextc" value="Student">Student</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+            <div class="row input-underline col-lg-12">
+              <form action="/action_page.php">
+                <select class="inputtextc" id="gender" name="gender">
+                  <option
+                    disabled="disabled"
+                    class="inputtextc"
+                    selected="selected"
+                  >
+                    Education Qualification
+                  </option>
+                  <option class="inputtextc" value="B.tech">B.tech</option>
+                  <option class="inputtextc" value="M.tech">M.tech</option>
+                  <option class="inputtextc" value="BCA/MCA">BCA/MCA</option>
+                  <option class="inputtextc" value="Bsc/Msc">Bsc/Msc</option>
+                  <option class="inputtextc" value="Diploma">Diploma</option>
+                  <option class="inputtextc" value="Other">Other</option>
+                </select>
+              </form>
+            </div>
+            <div class="row input-underline col-lg-12">
+              <input
+                type="text"
+                placeholder="Name of college"
+                class="inputtextc"
+              />
+            </div>
+
+            <div class="row input-underline col-lg-12">
+              <input
+                class="inputtextc"
+                type="number"
+                placeholder="Year of Graduation"
+                id="graduation-year"
+                rows="4"
+                cols="50"
+              />
+            </div>
+
+            <div class="row input-underline col-lg-12">
+              <textarea
+                class="inputtextarea"
+                type="text"
+                placeholder="Tell us more about you"
+              ></textarea>
+            </div>
+
+            <div class="row input-underline col-lg-12">
+              <textarea
+                class="inputtextarea"
+                type="text"
+                placeholder="What do you want to join SPS?"
+              ></textarea>
+            </div>
+
+            <div class="row input-underline col-lg-12">
+              <textarea
+                class="inputtextarea"
+                type="text"
+                placeholder="What motivates you work hard every day"
+              ></textarea>
+            </div>
+
+            <div class="row input-underline col-lg-12">
+              <form action="/action_page.php">
+                <select class="inputtextc" id="gender" name="gender">
+                  <option
+                    disabled="disabled"
+                    class="inputtextc"
+                    selected="selected"
+                  >
+                    From where did you learn about SPS?
+                  </option>
+                  <option class="inputtextc" value="B.tech">
+                    CrossRoads YouTube Channel
+                  </option>
+                  <option class="inputtextc" value="M.tech">YouTube</option>
+                  <option class="inputtextc" value="BCA/MCA">Friend</option>
+                  <option class="inputtextc" value="Bsc/Msc">Facebook</option>
+                  <option class="inputtextc" value="Diploma">Whatsapp</option>
+                </select>
+              </form>
+            </div>
+
+            <div class="row input-underline col-lg-12">
+              <input class="inputtextc mt-1" type="checkbox" id="agree" />I
+              agree that I have read and understood all the FAQs
+            </div>
+
+            <div class="row submit col-lg-12">
+              <button class="submitbutton" onclick="myFunction()">
+                REGISTER
+              </button>
+
+              <script>
+                function myFunction() {
+                  alert("You have registered.");
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright ©Packapeer Academy Pvt Ltd 2021</p>
+    </div>
+  </body>
+</html>
