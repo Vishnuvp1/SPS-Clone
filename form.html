@@ -1,226 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Register for SPS</title>
-  </head>
-  <body>
-    <div class="registrationheader">
-      <div class="container">
-        <div
-          class="row d-flex justify-content-center col-lg-12"
-          style="width: 100%"
-        >
-          <div class="header">
-            <div class="container">
-              <div class="row">
-                <p class="h2">SPS<span>.</span></p>
-              </div>
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style1.css">
+
+    <title>Register Form</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="container-fluid d-flex justify-content-center align-items-end" id="header">
+        <div class="row">
+            <div class="col-12">
+                <a class="mb-2" href="index.html">SPS<span>.</span></a>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-    <div class="regform" style="width: 100%; background-color: #f6f6f6">
-      <div class="container" style="padding: 10px">
-        <div class="row justify-content-center">
-          <div
-            class="redcard col-lg-10 justify-content-center"
-            style="
-              background-color: white;
-              margin-top: 20px;
-              padding: 40px;
-              padding-inline: 80px;
-              border-radius: 10px;
-              padding-bottom: 100px;
-              box-shadow: 0px 0px 15px 0px #8888;
-            "
-          >
-            <div class="row" style="padding: 10px">
-              <h1 class="h1size" style="color: #22d1b5; font-size: 30px">
-                REGISTRATION
-              </h1>
-            </div>
-            <div class="row input-underline col-lg-12">
-              <input
-                type="text"
-                placeholder="Full name"
-                class="inputtextc"
-                id="inpName"
-                name="Name"
-                required
-              />
-            </div>
-            <div class="row">
-              <div class="input-underline col-lg-5 rowhalf">
-                <input
-                  type="text"
-                  placeholder="Place"
-                  class="inputtextc"
-                  required
-                />
-              </div>
-              <div class="input-underline col-lg-5">
-                <form action="/action_page.php">
-                  <select class="inputtextc" id="gender" name="gender" required>
-                    <option
-                      disabled="disabled"
-                      class="inputtextc"
-                      selected="selected"
-                    >
-                      Gender
-                    </option>
-                    <option class="inputtextc" value="Male">Male</option>
-                    <option class="inputtextc" value="Female">Female</option>
-                  </select>
-                </form>
-              </div>
-            </div>
-            <div class="row input-underline col-lg-12">
-              <input type="text" placeholder="Email" class="inputtextc" />
-            </div>
-            <div class="row">
-              <div class="input-underline col-lg-5 rowhalf">
-                <input
-                  type="text"
-                  placeholder="Contact No"
-                  class="inputtextc"
-                />
-              </div>
-              <div class="input-underline col-lg-4 rowhalf">
-                <form action="/action_page.php">
-                  <select class="inputtextc" id="gender" name="gender">
-                    <option
-                      disabled="disabled"
-                      class="inputtextc"
-                      selected="selected"
-                    >
-                      Employment Status
-                    </option>
-                    <option class="inputtextc" value="Employed">
-                      Employed
-                    </option>
-                    <option class="inputtextc" value="Fresher">Fresher</option>
-                    <option class="inputtextc" value="Student">Student</option>
-                  </select>
-                </form>
-              </div>
-            </div>
-            <div class="row input-underline col-lg-12">
-              <form action="/action_page.php">
-                <select class="inputtextc" id="gender" name="gender">
-                  <option
-                    disabled="disabled"
-                    class="inputtextc"
-                    selected="selected"
-                  >
-                    Education Qualification
-                  </option>
-                  <option class="inputtextc" value="B.tech">B.tech</option>
-                  <option class="inputtextc" value="M.tech">M.tech</option>
-                  <option class="inputtextc" value="BCA/MCA">BCA/MCA</option>
-                  <option class="inputtextc" value="Bsc/Msc">Bsc/Msc</option>
-                  <option class="inputtextc" value="Diploma">Diploma</option>
-                  <option class="inputtextc" value="Other">Other</option>
-                </select>
-              </form>
-            </div>
-            <div class="row input-underline col-lg-12">
-              <input
-                type="text"
-                placeholder="Name of college"
-                class="inputtextc"
-              />
-            </div>
 
-            <div class="row input-underline col-lg-12">
-              <input
-                class="inputtextc"
-                type="number"
-                placeholder="Year of Graduation"
-                id="graduation-year"
-                rows="4"
-                cols="50"
-              />
-            </div>
 
-            <div class="row input-underline col-lg-12">
-              <textarea
-                class="inputtextarea"
-                type="text"
-                placeholder="Tell us more about you"
-              ></textarea>
-            </div>
+    <div class="container mt-5" id="registration">
+        <div class="row">
+            <div class="col-12">
+                <div class="box">
+                    <form class="row g-3" id="form" onsubmit="return validateForm()">
+                        <div class="col-12">
+                            <h2 class="heading">REGISTRATION</h2>
+                        </div>
+                        <div class="col-md-12 input-box">
+                            <input type="text" class="form-control shadow-none" placeholder="Full Name" id="full-name">
+                            <span id="name-error" class="mt-2 error">This field is required</span>
+                        </div>
+                        <div class="col-md-6 input-box">
+                            <input type="text" class="form-control shadow-none" placeholder="Place" id="place">
+                            <span id="place-error" class="mt-2 error">This field is required</span>
 
-            <div class="row input-underline col-lg-12">
-              <textarea
-                class="inputtextarea"
-                type="text"
-                placeholder="What do you want to join SPS?"
-              ></textarea>
-            </div>
+                        </div>
+                        <div class="col-md-6 input-box d-md-flex justify-content-end">
+                            <select class="form-select shadow-none" id="gender">
+                                <option selected>Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                            <span id="gender-error" class="mt-2 error">This field is required</span>
+                        </div>
+                        <div class="col-12 input-box">
+                            <input type="email" class="form-control shadow-none" placeholder="Email" id="email">
+                            <span id="email-error" class="mt-2 error">This field is required</span>
+                        </div>
+                        <div class="col-md-6 input-box">
+                            <input type="number" class="form-control shadow-none" placeholder="Contact No"
+                                id="contact-number">
+                            <span id="contact-number-error" class="mt-2 error">This field is required</span>
 
-            <div class="row input-underline col-lg-12">
-              <textarea
-                class="inputtextarea"
-                type="text"
-                placeholder="What motivates you work hard every day"
-              ></textarea>
-            </div>
+                        </div>
+                        <div class="col-md-6 input-box">
+                            <select class="form-select shadow-none" id="employment-status">
+                                <option selected>Employment Status</option>
+                                <option>Employed</option>
+                                <option>Fresher</option>
+                                <option>Student</option>
+                            </select>
+                            <span id="employment-status-error" class="mt-2 error">This field is required</span>
 
-            <div class="row input-underline col-lg-12">
-              <form action="/action_page.php">
-                <select class="inputtextc" id="gender" name="gender">
-                  <option
-                    disabled="disabled"
-                    class="inputtextc"
-                    selected="selected"
-                  >
-                    From where did you learn about SPS?
-                  </option>
-                  <option class="inputtextc" value="B.tech">
-                    CrossRoads YouTube Channel
-                  </option>
-                  <option class="inputtextc" value="M.tech">YouTube</option>
-                  <option class="inputtextc" value="BCA/MCA">Friend</option>
-                  <option class="inputtextc" value="Bsc/Msc">Facebook</option>
-                  <option class="inputtextc" value="Diploma">Whatsapp</option>
-                </select>
-              </form>
-            </div>
+                        </div>
+                        <div class="col-md-12 input-box">
+                            <select class="form-select shadow-none" id="qualification">
+                                <option selected>Educational Qualification</option>
+                                <option>B.Tech</option>
+                                <option>M.Tech</option>
+                                <option>BCA/MCA</option>
+                                <option>Bsc/Msc</option>
+                                <option>Diploma</option>
+                                <option>Other</option>
+                            </select>
+                            <span id="qualification-error" class="mt-2 error">This field is required</span>
 
-            <div class="row input-underline col-lg-12">
-              <input class="inputtextc mt-1" type="checkbox" id="agree" />I
-              agree that I have read and understood all the FAQs
-            </div>
+                        </div>
+                        <div class="col-md-12 input-box">
+                            <input type="text" class="form-control shadow-none"
+                                placeholder="Name of College / Organization" id="college">
+                            <span id="college-error" class="mt-2 error">This field is required</span>
+                        </div>
+                        <div class="col-md-6 input-box">
+                            <input type="number" class="form-control shadow-none" placeholder="Your of Graduation"
+                                id=graduation-year>
+                            <span id="graduation-year-error" class="mt-2 error">This field is required</span>
 
-            <div class="row submit col-lg-12">
-              <button class="submitbutton" onclick="myFunction()">
-                REGISTER
-              </button>
+                        </div>
+                        <div class="col-md-12 input-box">
+                            <textarea class="form-control shadow-none" rows="2" placeholder="Tell us more about you"
+                                id="about-as"></textarea>
+                                <span id="about-as-error" class="mt-2 error">This field is required</span>
+    
+                        </div>
+                        <div class="col-md-12 input-box">
+                            <textarea class="form-control shadow-none" rows="2"
+                                placeholder="Why do you want to join SPS?" id="join-sps"></textarea>
+                                <span id="join-sps-error" class="mt-2 error">This field is required</span>
 
-              <script>
-                function myFunction() {
-                  alert("You have registered.");
-                }
-              </script>
+                        </div>
+                        <div class="col-md-12 input-box">
+                            <textarea class="form-control shadow-none" rows="2"
+                                placeholder="What motives you to work hard every day" id="motives"></textarea>
+                                <span id="motives-error" class="mt-2 error">This field is required</span>
+
+                        </div>
+                        <div class="col-md-12 input-box">
+                            <select class="form-select shadow-none" id="learn-about-sps">
+                                <option selected>From where did you learn about SPS?</option>
+                                <option>Crossroads Youtube Channel</option>
+                                <option>YouTube</option>
+                                <option>Friends</option>
+                                <option>Whatsapp Group</option>
+                            </select>
+                            <span id="learn-about-sps-error" class="mt-2 error">This field is required</span>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-start">
+                            <input class="form-check-input shadow-none" type="checkbox" id="check-box">
+                            <p class="ml-5" style="margin-left: 5px;">I agree that I Have read and understood all the
+                                <span>FAQS</span>
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <span id="check-box-error" class="mt-2 error">This field is required</span>
+                        </div>
+
+                        <div class="col-md-12 input-box">
+                            <button type="submit" class="btn btn-primary w-100">REGISTER</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
-    <div class="copyright">
-      <p>Copyright ©Packapeer Academy Pvt Ltd 2021</p>
-    </div>
-  </body>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <!-- Custom js -->
+    <script src="./script1.js"></script>
+</body>
+
 </html>

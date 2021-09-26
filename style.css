@@ -19,10 +19,11 @@
       display: flex;
       justify-content: space-around;
   }
-
   .imgleft img{
     width:100%;
+    
     cursor: pointer;
+   
   }
   
   
@@ -331,9 +332,33 @@
     margin-top: 40px;
     border: 2px solid grey;
   }
+  
+  
+  
+  .inputtextc{
+  border: none;
+  outline:none;
+  font-weight: 200;
+  }
+  .input-underline{
+    border-bottom: 1px solid rgb(206, 205, 205);
+   padding: 10px;
+    
+  }
+  .rowhalf{
+  margin-left: 80px;
+  
+  }
+  #gender{
+    outline: none;
+  }
+  select{
+    border: none;
+    outline:none;
+    font-weight: 200;
+  }
 
-
-  /* Five Starts */
+  * Five Starts */
 #section-five h4{
     font-size: 40px;
     font-weight: 700;
@@ -502,7 +527,7 @@
 
 }
 #goto-button{
-  display: none;
+    display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -521,72 +546,3 @@
     transition: all 0.5s;
     background-color: #555;
 }
-
-  
-  
-  /* form */
-  
-
-  .inputtextc{
-  border: none;
-  outline:none;
-  font-weight: 200;
-  }
-  .input-underline{
-    border-bottom: 1px solid rgb(206, 205, 205);
-    padding: 40px 5px 10px 5px;
-    
-  }
-  .rowhalf{
-  margin-right: 80px;
-  
-  }
-  #gender{
-    outline: none;
-  }
-  select{
-    border: none;
-    outline:none;
-    font-weight: 200;
-  }
-
-  .inputtextarea{
-    overflow: auto;
-    resize: vertical;
-    width: 780px;
-    border: none;
-    outline:none;
-    font-weight: 200;
-  }
-
-  .submitbutton{
-    width: 780px;
-    border-radius: 3px;
-    border: none;
-    padding: 15px;
-    background-color: #22d1b5;
-    color: white;
-  }
-
-  .submit{
-    padding-top: 60px;
-  }
-
-  .submitbutton:hover{
-    background-color: #3caea8;
-  }
-
-  .copyright{
-    text-align: center;
-    padding: 100px;
-
-  }
-
-
-
-
-
-
-
-
-  
