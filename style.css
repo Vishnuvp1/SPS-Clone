@@ -266,7 +266,7 @@
   .Domains{
       background-color: #f6f6f6;
       padding: 10px;
-      padding-inline: 80px;
+      padding-inline: 30px;
   }
   .Domains .row{
       display: flex;
@@ -325,7 +325,7 @@
   .joinprocess .firstnoheight .col-2.full::after {
     height: 50%;
     left: calc(50% - 3px);
-    top: 50px;
+    bottom: 0px;
   }
   .chatbox{
     margin: 20px;
